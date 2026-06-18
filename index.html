@@ -438,27 +438,21 @@ font-family:var(--sa);background:var(--bg);color:var(--d);position:relative;box-
 /* Q&A pairs */
 .mp .tb-qa-wrap{display:flex;flex-direction:column;gap:14px;margin-top:8px}
 .mp .tb-qa{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:stretch}
-.mp .tb-q{background:var(--d);border-radius:16px;padding:clamp(24px,3vw,32px);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
-.mp .tb-q::before{content:"";position:absolute;top:-30%;right:-12%;width:200px;height:200px;background:radial-gradient(circle,rgba(65,184,202,.12) 0%,transparent 65%);pointer-events:none}
-.mp .tb-q .ql{font-family:var(--mo);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--c-vivid);font-weight:500;margin-bottom:12px;position:relative;z-index:1}
-.mp .tb-q p{font-family:var(--sa);font-size:clamp(16px,1.7vw,19px);font-weight:500;color:var(--w);line-height:1.4;margin:0;position:relative;z-index:1}
-.mp .tb-a{background:var(--kb);border:1px solid rgba(42,114,176,.14);border-radius:16px;padding:clamp(24px,3vw,32px);display:flex;flex-direction:column;justify-content:center}
-.mp .tb-a.dk{background:var(--gr);border:none}
-.mp .tb-a .al{font-family:var(--mo);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--c);font-weight:600;margin-bottom:10px}
-.mp .tb-a.dk .al{color:var(--c-vivid)}
-.mp .tb-a p{font-family:var(--se);font-style:italic;font-weight:400;font-size:clamp(24px,3vw,34px);color:var(--d);line-height:1.12;margin:0;letter-spacing:-.01em}
-.mp .tb-a.dk p{color:var(--w)}
-.mp .tb-a p .ac{color:var(--c)}
-.mp .tb-a.dk p .ac{color:var(--c-vivid)}
+.mp .tb-q{background:var(--kb);border:1px solid rgba(42,114,176,.14);border-radius:16px;padding:clamp(26px,3vw,34px);display:flex;flex-direction:column;justify-content:center}
+.mp .tb-q .ql{font-family:var(--mo);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--c);font-weight:600;margin-bottom:12px}
+.mp .tb-q p{font-family:var(--sa);font-size:clamp(16px,1.7vw,19px);font-weight:500;color:var(--d);line-height:1.4;margin:0}
+.mp .tb-a{background:var(--gr);border:none;border-radius:16px;padding:clamp(26px,3vw,34px);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.mp .tb-a::before{content:"";position:absolute;bottom:-32%;right:-10%;width:220px;height:220px;background:radial-gradient(circle,rgba(65,184,202,.14) 0%,transparent 65%);pointer-events:none}
+.mp .tb-a .al{font-family:var(--mo);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--c-vivid);font-weight:600;margin-bottom:10px;position:relative;z-index:1}
+.mp .tb-a p{font-family:var(--se);font-style:italic;font-weight:400;font-size:clamp(24px,3vw,34px);color:var(--w);line-height:1.12;margin:0;letter-spacing:-.01em;position:relative;z-index:1}
+.mp .tb-a p .ac{color:var(--c-vivid)}
 @media (max-width:767px){.mp .tb-qa{grid-template-columns:1fr;gap:10px}}
 /* Pull-line cards */
 .mp .tb-pull{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
-.mp .tb-pull-card{border-radius:16px;padding:clamp(24px,3vw,30px);display:flex;flex-direction:column;justify-content:center}
-.mp .tb-pull-load{background:linear-gradient(135deg,rgba(42,114,176,.12) 0%,rgba(42,114,176,.03) 100%);border:1px solid rgba(42,114,176,.22)}
-.mp .tb-pull-love{background:linear-gradient(135deg,rgba(201,167,124,.20) 0%,rgba(201,167,124,.05) 100%);border:1px solid rgba(168,124,66,.28)}
-.mp .tb-pull-card .pl{font-family:var(--mo);font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:10px}
-.mp .tb-pull-load .pl{color:var(--c)}
-.mp .tb-pull-love .pl{color:var(--c-warm-ink)}
+.mp .tb-pull-card{background:var(--kb);border:1px solid rgba(42,114,176,.14);border-left-width:4px;border-radius:14px;padding:clamp(24px,3vw,30px);display:flex;flex-direction:column;justify-content:center}
+.mp .tb-pull-load{border-left-color:var(--c)}
+.mp .tb-pull-love{border-left-color:var(--c-vivid)}
+.mp .tb-pull-card .pl{font-family:var(--mo);font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:10px;color:var(--c)}
 .mp .tb-pull-card p{font-family:var(--se);font-style:italic;font-weight:400;font-size:clamp(19px,2.1vw,24px);line-height:1.2;color:var(--d);margin:0}
 .mp .tb-pull-card p strong{font-style:normal;font-weight:600}
 @media (max-width:767px){.mp .tb-pull{grid-template-columns:1fr}}
@@ -600,11 +594,11 @@ font-family:var(--sa);background:var(--bg);color:var(--d);position:relative;box-
 
 <div class="r" data-d="0.26"><div class="tb-qa-wrap">
 
-<div class="r" data-d="0.28"><div class="tb-qa"><div class="tb-q"><div class="ql">When was the last time you</div><p>watched a patient's vitals at home?</p></div><div class="tb-a"><div class="al">CADE</div><p>We do it <span class="ac">all day long.</span></p></div></div></div>
+<div class="r" data-d="0.28"><div class="tb-qa"><div class="tb-q"><div class="ql">When was the last time you</div><p>Watched a patient's vitals at home?</p></div><div class="tb-a"><div class="al">CADE</div><p>We do it <span class="ac">all day long.</span></p></div></div></div>
 
-<div class="r" data-d="0.34"><div class="tb-qa"><div class="tb-q"><div class="ql">When was the last time you</div><p>called a patient between visits?</p></div><div class="tb-a dk"><div class="al">CADE</div><p>That is our <span class="ac">full-time job.</span></p></div></div></div>
+<div class="r" data-d="0.34"><div class="tb-qa"><div class="tb-q"><div class="ql">When was the last time you</div><p>Called a patient between visits?</p></div><div class="tb-a"><div class="al">CADE</div><p>That is <span class="ac">our job.</span></p></div></div></div>
 
-<div class="r" data-d="0.4"><div class="tb-qa"><div class="tb-q"><div class="ql">When was the last time you</div><p>walked a patient through their insurance and the state of their coverage?</p></div><div class="tb-a"><div class="al">CADE</div><p>We make sure they <span class="ac">understand it.</span></p></div></div></div>
+<div class="r" data-d="0.4"><div class="tb-qa"><div class="tb-q"><div class="ql">When was the last time you</div><p>Walked a patient through their insurance and state benefit opportunities?</p></div><div class="tb-a"><div class="al">CADE</div><p>We make sure they <span class="ac">understand it.</span></p></div></div></div>
 
 </div></div>
 
@@ -694,7 +688,7 @@ font-family:var(--sa);background:var(--bg);color:var(--d);position:relative;box-
 <div class="bc"><div class="pre">Platform Network</div><div class="n">30K<span class="plus">+</span></div><div class="l">Patients on platform</div></div>
 <div class="bc hero"><img src="https://imagedelivery.net/qJvpJU9hpeX3lEcmqZfcwg/ea71bdc8-b2c0-4c20-b8a2-e702a7164900/public" alt="CADE" class="logo"><div class="kw">Connected Care.<br><span class="ac">Built differently.</span></div><div class="tag">Effortless &middot; Personal &middot; Loyal</div></div>
 <div class="bc"><div class="pre">2026 Rate Increase</div><div class="n">+12<span class="x">%</span></div><div class="l">CMS allowable, two new RPM codes</div></div>
-<div class="bc feat"><div class="ic">Turnkey</div><div class="ft">We run all of it</div><div class="s">Enrollment, devices, monitoring, documentation, and billing prep. Minimal added lift for your staff.</div></div>
+<div class="bc feat"><div class="ic">Turnkey</div><div class="ft">We run the program</div><div class="s">We run the program end to end. You support the enrollment of your patients into their new program.</div></div>
 <div class="bc w2 dark"><div class="pre">Patient Experience</div><div class="n">Real<span class="x" style="font-size:.5em">&nbsp;people</span></div><div class="s">No AI calling. No call centers. The same designated care member every week. Medicare-backed, FDA-cleared devices.</div></div>
 <div class="bc w2 feat"><div class="ic">SoCal</div><div class="ft">Regional partner, local presence</div><div class="s">Based in Murrieta, minutes from your Murrieta, Temecula, and Menifee offices. Same time zone, same market, real accountability in person.</div></div>
 </div></div>
